@@ -1,0 +1,19 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "aside header"
+    "aside main"; /* Especifica qtd linhas no template de acordo com as propriedades especificadas */
+  grid-template-columns: auto 1fr; /* Especifica quantas colunas (1fr significa fração de espaço [de acordo com a qtd de colunas]) */
+}
+
+.cabecalho {
+  grid-area: header; /* Especifica em que area essa classe será exibida (parecido com container) */
+}
+
+.menu-lateral {
+  grid-area: aside;
+}
+
+.principal {
+  grid-area: main;
+}

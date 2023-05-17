@@ -1,0 +1,33 @@
+
+.secao-horizontal .cartao {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1.25rem;
+}
+
+/* grid-lines */
+/* Propriedades ou classes declarada para pegar a conf abaixo */
+.secao-horizontal .cartao__imagem {
+  /* grid-column-start: 1;  /* Onde a coluna inicia */
+  /* grid-column-end: 2; /* Onde a coluna termina */
+  /* grid-row-start: 1; /* Onde a linha inicia */
+  /* grid-row-end: 4; /* Onde a linha termina */
+
+  /* GRID-AREA */
+  /* esquerda / acima / direita / abaixo */
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.secao-horizontal .cartao__botao {
+  grid-column: 3 / 4; /* inicia e finaliza colunas */
+  grid-row: 1 / 4; /* inicia e finaliza linhas */
+}
+
+.secao-horizontal .cartao__titulo {
+  align-self: end;
+}
+
+.secao-vertical .cartao {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
