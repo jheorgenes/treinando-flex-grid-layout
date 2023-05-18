@@ -20,26 +20,22 @@
 .rodape__botao--volume-down, 
 .rodape__horario--termino, 
 .barra__container--volume, 
-.rodape__botao--volume {
+.rodape__botao--volume-up  {
     grid-row: 2 / 3;
 }
 
 /* Colunas */
 .rodape__botao--voltar {
     grid-column: 4 / 5;
+    justify-self: end;
 }
 
 .barra__container--reproducao {
     grid-column: 4 / 9;
 }
 
-.rodape__botao--voltar {
-    grid-column: 4 / 5;
-    justify-self: end;
-}
-
 .rodape__botao--proximo {
-    justify-content: left;
+    justify-self: left;
 }
 
 .rodape__botao--volume-down {
